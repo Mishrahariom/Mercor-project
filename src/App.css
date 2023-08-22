@@ -1,0 +1,836 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,500&family=Inter:wght@300;500&display=swap'); */
+
+html,
+body {
+  margin: 0;
+  padding: 0
+}
+
+body {
+  /* width: 100vw;
+    height: 100vh;  */
+  color: white;
+  background-color: black;
+  /* font-family: 'Archivo Black', sans-serif; */
+  /* text-align: center; */
+}
+
+/* start a front page  */
+
+/* add the hero nav section  */
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  font-family: 'Archivo Black', sans-serif;
+}
+
+
+/* .navbar-logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .navbar :hover{
+    cursor: pointer;
+    color: yellow;
+  } */
+
+.navbar-links {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  font-family: 'Archivo Black', sans-serif;
+
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+.navbar-links li a:hover {
+  cursor: pointer;
+
+  color: rgb(40, 239, 40);
+
+}
+
+/* end of hero nav sec  */
+
+/*  start of Cash app and image section  */
+
+.Cube-img {
+  margin-right: 65%;
+  padding-bottom: 2%;
+}
+
+.Stairs-img {
+  right: 245px;
+  position: absolute;
+  top: 100px;
+
+}
+
+.Cash-img {
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 200px;
+  font-style: normal;
+  margin-right: 5%;
+  font-family: 'Archivo Black', sans-serif;
+}
+
+.App-img {
+
+  font-size: 200px;
+  font-style: normal;
+  margin-right: 5%;
+  top: 390px;
+  position: absolute;
+  right: 513px;
+  font-family: 'Archivo Black', sans-serif;
+
+}
+
+.Mobo-img {
+
+
+
+  margin-right: 5%;
+  top: 195px;
+  position: absolute;
+  left: 560px;
+  width: 370px;
+
+}
+
+.intro-img {
+
+
+  margin-right: 5%;
+  bottom: 53px;
+  position: absolute;
+  left: 210px;
+}
+
+.Pillar-img {
+
+
+  bottom: 0;
+  position: absolute;
+  right: 380px;
+  width: 270px;
+
+}
+
+.custom-button {
+  background-color: black;
+  color: white;
+  padding: 10px 30px;
+  border: 2px solid white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  bottom: 3%;
+  position: absolute;
+  left: 90px;
+  font-size: small;
+  /* position: fixed; */
+  font-family: 'Archivo Black', sans-serif;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.custom-button:hover {
+  background-color: rgb(252, 252, 252);
+  color: rgb(5, 1, 1);
+  border-color: white;
+}
+.Apple-img {
+  left: 3%;
+  position: absolute;
+  width: 18px;
+  /* position: fixed; */
+
+}
+
+
+
+.custom-button-2 {
+  background-color: black;
+  color: white;
+  padding: 10px 30px;
+  border: 2px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  bottom: 3%;
+  position: absolute;
+  left: 250px;
+  /* width: 20px; */
+  font-size: small;
+  /* position: fixed; */
+  font-family: 'Archivo Black', sans-serif;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  
+  
+
+}
+
+.custom-button-2:hover {
+  background-color: rgb(252, 252, 252);
+  color: rgb(5, 1, 1);
+  border-color: white;
+}
+
+.Play-img {
+  left: 4%;
+  position: absolute;
+  width: 18px;
+  /* position: fixed; */
+
+}
+
+.Arr-img {
+
+  bottom: 4%;
+  position: absolute;
+  right: 780px;
+  width: 15px;
+}
+
+.Para-img {
+  font-size: xx-small;
+  width: 400px;
+  /* text-overflow: clip; */
+  text-align: left;
+  position: absolute;
+  bottom: 1%;
+  right: 250px;
+  font-style: normal;
+
+
+}
+
+.Msg-img {
+
+  bottom: 5.5%;
+  position: absolute;
+  right: 180px;
+  width: 24px;
+
+}
+
+.Twt-img {
+
+  bottom: 5.5%;
+  position: absolute;
+  right: 130px;
+  width: 24px;
+
+}
+
+.Insta-img {
+
+  bottom: 5.5%;
+  position: absolute;
+  right: 80px;
+  width: 24px;
+
+}
+
+.Insta-img:hover {
+  cursor: pointer;
+}
+
+.Twt-img:hover {
+  cursor: pointer;
+}
+
+.Msg-img:hover {
+  cursor: pointer;
+}
+
+.Line-img {
+
+
+  position: absolute;
+  left: 40px;
+  width: 93%;
+  top: 0%;
+
+}
+
+
+/*  end of front page  */
+
+/*  payment page start */
+
+.Phone-img {
+
+  margin-right: 5%;
+  /* top: 195px; */
+  position: absolute;
+  left: 460px;
+  /* width: 370px; */
+  bottom: -600px;
+
+
+}
+
+.Piller-1-img {
+
+  margin-right: 5%;
+  /* top: 195px; */
+  position: absolute;
+  left: 755px;
+  /* width: 370px; */
+  bottom: -760px;
+
+}
+
+.Para1-img {
+  font-size: small;
+  width: 290px;
+  /* text-overflow: clip; */
+  position: absolute;
+  bottom: -450px;
+  left: 405px;
+  text-align: left;
+
+}
+
+.heading-img {
+  color: rgb(35, 215, 35);
+  bottom: -360px;
+  left: 400px;
+  text-align: left;
+  position: absolute;
+
+  font-family: 'Archivo Black', sans-serif;
+}
+
+.bamb-img {
+
+  margin-right: 5%;
+  /* top: 195px; */
+  position: absolute;
+  left: -20px;
+  /* width: 370px; */
+  bottom: -855px;
+
+}
+
+.mini-img {
+  margin-right: 5%;
+
+  position: absolute;
+  left: 150px;
+
+  bottom: -835px;
+}
+
+.mini-1-img {
+  margin-right: 5%;
+
+  position: absolute;
+  left: 260px;
+
+  bottom: -800px;
+}
+
+.long-1-img{
+  margin-right: 5%;
+
+  position: absolute;
+  right: -75px;
+
+  bottom: -820px;
+}
+
+.midum-img{
+  margin-right: 5%;
+ position: absolute;
+  right: 110px;
+  bottom: -725px; 
+  width: 140px;
+}
+
+.long-2-img{
+  margin-right: 5%;
+ position: absolute;
+  right: 140px;
+  bottom: -855px; 
+  /* width: 140px; */
+}
+
+.mini-3-img{
+  margin-right: 5%;
+ position: absolute;
+  right: 500px;
+  bottom: -855px; 
+}
+
+.mini-4-img{
+  margin-right: 5%;
+  position: absolute;
+   right: 650px;
+   bottom: -780px; 
+}
+
+.vector-img{
+ 
+  position: absolute;
+  
+  left: 0px;
+  width: 99%;
+  /* margin-right: 0%; */
+  
+   bottom: -850px; 
+
+   
+   
+  
+   
+}
+
+.vector-img:hover{
+  cursor: pointer;
+  color:black ;
+}
+
+/* end of payment section  */
+
+/*  banking page start  */
+
+.Hole-img{
+  position: absolute;
+  
+  left: 0px;
+  /* width: 99%; */
+  /* margin-right: 0%; */
+  
+    
+}
+
+.Hole1-img{
+  position: absolute;
+ right: 260px;
+   bottom: -1580px; 
+}
+
+.Culumn-img{
+  position: absolute;
+  
+  left: 70px;
+  bottom: -1170px;
+}
+
+.track-img{
+  position: absolute;
+  
+  right: 200px;
+  bottom: -1030px;
+}
+
+.tube-img{
+  position: absolute;
+  left: 550px;
+  bottom: -1580px; 
+}
+
+.phone-2-img{
+  position: absolute;
+  left: 620px;
+  bottom: -1420px; 
+  width: 22%;
+}
+
+.Monster-img{
+   
+  position: absolute;
+  right: 60px;
+  bottom: -1530px; 
+
+}
+
+.CUBE-img{
+  position: absolute;
+  right: 270px;
+  bottom: -1490px;
+}
+.Ramp-img{
+  position: absolute;
+  right: 350px;
+  bottom: -1280px; 
+  width: 17%;
+}
+
+.Zina-img{
+  position: absolute;
+  right: 100px;
+  bottom: -1380px; 
+  /* width: 17%; */
+
+}
+.sidhi-img{
+  position: absolute;
+  left: 460px;
+  bottom: -1200px; 
+  /* width: 22%; */
+}
+
+.nope-img{
+  position: absolute;
+  left: 80px;
+  bottom: -1480px; 
+  /* width: 17%; */
+}
+
+.yes-img{
+  position: absolute;
+  left: 200px;
+  bottom: -1530px; 
+}
+
+.bank-img{
+
+  font-family: 'Archivo Black', sans-serif;
+  position: absolute;
+  left: 360px;
+  bottom: -1225px;
+ color: white;
+
+}
+
+.para-3-img{
+  
+  font-size: small;
+  width: 250px;
+  /* text-overflow: clip; */
+  position: absolute;
+  bottom: -1320px;
+  left: 360px;
+  text-align: left;
+  
+}
+
+/*  end of banking section  */
+
+/* Boost page and section start   */
+
+.Boost-img{
+   width: 59%;
+   position: absolute;
+   right: 0%;
+   bottom: -2350px;
+   margin-right:0%;
+
+   
+}
+
+.phono-6-img{
+  position: absolute;
+  left: 720px;
+  bottom: -2235px; 
+  width: 15%;
+}
+
+.stairs-6-img{
+  position: absolute;
+  left: 0px;
+  bottom: -2350px; 
+  /* width: 15%; */
+}
+
+.hand-img{
+
+  position: absolute;
+  right:210px;
+  bottom: -1790px;
+}
+
+.mobo-8-img{
+  position: absolute;
+  right:310px;
+  bottom: -1940px;
+}
+
+.burger-img{
+  position: absolute;
+  right:420px;
+  bottom: -2070px;
+}
+
+.shoes-1-img{
+  position: absolute;
+  right:50px;
+  bottom: -2080px;
+}
+
+.cofee-1-img{
+  position: absolute;
+  right:310px;
+  bottom: -2210px;
+}
+
+.hading-1-img{
+  font-family: 'Archivo Black', sans-serif;
+  position: absolute;
+  left: 460px;
+  bottom: -1930px;
+ color: rgb(37, 244, 37);
+ width: 15%;
+}
+
+.para-3-img{
+  font-size: small;
+  width: 20%;
+  /* text-overflow: clip; */
+  position: absolute;
+  bottom: -2020px;
+  left: 420px;
+  text-align: left;
+}
+
+/* boost page and section end  */
+
+/* investing page start */
+
+.inve-img{
+  height: 100vh;
+  background: linear-gradient(to top,
+   white 0%,
+   white 40%,
+   rgb(12, 181, 12) 40%,
+  rgb(12, 181, 12) 100%
+    );
+}
+
+.mountain-img{
+  position: absolute;
+  right: 0px;
+  bottom: -3040px;
+}
+
+.moun-img{
+  position: absolute;
+  right: 0px;
+  bottom: -2860px;
+}
+
+.moun-1-img{
+  position: absolute;
+  left: 0px;
+  bottom: -3040px;
+}
+
+.custom-1-button {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  padding: 10px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: small;
+  font-family: 'Archivo Black', sans-serif;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  position: absolute;
+  bottom: -3050px;
+  left: 5.5%;
+
+}
+
+/* Hover effect */
+.custom-1-button:hover {
+  background-color: black;
+  color: white;
+  border-color: white;
+}
+
+.Apple-1-img {
+  left: 3%;
+  position: absolute;
+  width: 18px;
+
+
+ }  
+
+ .custom-2-button {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  padding: 10px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: small;
+  font-family: 'Archivo Black', sans-serif;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  position: absolute;
+  bottom: -3050px;
+  left: 17%;
+
+}
+
+/* Hover effect */
+.custom-2-button:hover {
+  background-color: black;
+  color: white;
+  border-color: white;
+}
+
+.Play-1-img {
+  left: 3%;
+  position: absolute;
+  width: 18px;
+
+
+ }  
+
+
+
+ .custom-button-3 {
+  background-color: black;
+  color: white;
+  padding: 10px 30px;
+  border: 2px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  bottom: 3040px;
+  position: absolute;
+  left: 250px;
+
+  font-size: small;
+  
+  font-family: 'Archivo Black', sans-serif;
+}
+
+.Play-1-img {
+  left: 4%;
+  position: absolute;
+  width: 18px;
+ 
+
+}
+
+.Para-2-img {
+  font-size: xx-small;
+  width: 23%;
+
+  text-align: left;
+  position: absolute;
+  bottom: -3070px;
+  right: 250px;
+  font-style: normal;
+  color: black;
+
+
+}
+
+.Msg-2-img {
+
+  bottom: -3040px;
+  position: absolute;
+  right: 180px;
+  width: 24px;
+
+}
+
+.Twt-2-img {
+
+  bottom: -3040px;
+  position: absolute;
+  right: 130px;
+  width: 24px;
+
+}
+
+.Insta-2-img {
+
+  bottom: -3040px;
+  position: absolute;
+  right: 80px;
+  width: 24px;
+
+} 
+
+.phonwa-img{
+  bottom: -2920px;
+  position: absolute;
+  left: 470px;
+  /* width: 24px; */
+}
+
+.phonwa-1-img{
+  bottom: -2920px;
+  position: absolute;
+  left: 770px;
+}
+
+.head-1-img{
+  font-family: 'Archivo Black', sans-serif;
+  color: white;
+  bottom: -2520px;
+  position: absolute;
+  left: 590px;
+ font-size: 280%;
+
+}
+
+.head-2-img{
+  font-family: 'Archivo Black', sans-serif;
+  color: rgb(0, 0, 0);
+  bottom: -2660px;
+  position: absolute;
+  left: 100px;
+ font-size: 200%;
+}
+
+.para-7-img{
+  /* font-family: 'Archivo Black', sans-serif; */
+  color: rgb(0, 0, 0);
+  bottom: -2750px;
+  position: absolute;
+  left: 100px;
+ font-size: small;
+ width: 17%;
+ text-align: left;
+ font-style: bold;
+}
+
+.head-3-img{
+  font-family: 'Archivo Black', sans-serif;
+  color: rgb(0, 0, 0);
+  bottom: -2660px;
+  position: absolute;
+  right: 335px;
+ font-size: 200%;
+}
+
+.para-8-img{
+  color: rgb(0, 0, 0);
+  bottom: -2750px;
+  position: absolute;
+  right: 200px;
+ font-size: small;
+ width: 17%;
+ text-align: left;
+ font-style: bold;
+}
+
+.Line-1-img {
+
+
+  position: absolute;
+  left: 40px;
+  width: 86%;
+  /* top: 0%; */
+  bottom: -2850 ;
+
+}
+
