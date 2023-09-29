@@ -13,14 +13,14 @@ function App() {
     <>
       <Hero />  
       <Cash />
-      <Payment />
+      {/* <Payment />
       <Banking />
       <Boost />
       <br>
       </br>
       <br></br>
-      {/* <br></br> */}
-      <Investing />
+       <br></br>
+      <Investing />  */}
     </>
   
     )

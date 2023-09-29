@@ -11,6 +11,7 @@ body {
     height: 100vh;  */
   color: white;
   background-color: black;
+  font-family: 'Archivo Black', sans-serif;
   /* font-family: 'Archivo Black', sans-serif; */
   /* text-align: center; */
 }
@@ -19,46 +20,95 @@ body {
 
 /* add the hero nav section  */
 
+/* Default styles for the navbar */
 .navbar {
   display: flex;
-  justify-content: center;
+  z-index: 100;
+  justify-content: space-between;
   align-items: center;
-  background-color: black;
-  color: white;
+  background-color: rgba(0, 0, 0, 0);
+  
   padding: 10px 20px;
-  font-family: 'Archivo Black', sans-serif;
+  color: white;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
 }
 
 
-/* .navbar-logo {
-    font-size: 24px;
-    font-weight: bold;
+
+.navbar-logo img {
+  height: 40px;
+}
+
+/* Hide the toggle button for screens larger than 768px */
+@media (min-width: 769px) {
+  .navbar-toggle {
+    display: none;
+    /* order: 2; */
   }
 
-  .navbar :hover{
-    cursor: pointer;
-    color: yellow;
-  } */
+  .navbar-photo{
+    order: 3;
+  }
 
-.navbar-links {
-  list-style-type: none;
-  display: flex;
-  gap: 20px;
-  font-family: 'Archivo Black', sans-serif;
-
+  /* Show the nav links on desktop */
+  .navbar-links {
+    display: flex;
+    align-items: center;
+    order: 2;
+    /* color: white; */
+  }
 }
 
-.navbar-links li a {
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 9px 1px;
+}
+
+
+
+/* Hide the nav links by default */
+ .navbar-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  text-align: center;
+}
+
+.navbar-links a {
   text-decoration: none;
   color: white;
-  cursor: pointer;
+  margin: 0 15px;
+  font-weight: 500;
+  display: block;
+  
+} 
+
+/* Add styles for the 'open' class to show the links when the menu is open */
+.navbar-links.open {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 10px;
 }
 
-.navbar-links li a:hover {
-  cursor: pointer;
+/* Responsive styles */
+@media (max-width: 768px) {
+  .navbar {
+    justify-content: space-between;
+  }
 
-  color: rgb(40, 239, 40);
-
+  /* Hide the nav links on mobile */
+  .navbar-links {
+    display: none;
+    /* order: 2; */
+  }
 }
 
 /* end of hero nav sec  */
@@ -80,7 +130,8 @@ body {
 .Cash-img {
   font-family: 'Archivo Black', sans-serif;
   font-size: 200px;
-  font-style: normal;
+  position: absolute;
+ top: 200px;
   margin-right: 5%;
   font-family: 'Archivo Black', sans-serif;
 }
@@ -90,7 +141,7 @@ body {
   font-size: 200px;
   font-style: normal;
   margin-right: 5%;
-  top: 390px;
+  top: 360px;
   position: absolute;
   right: 513px;
   font-family: 'Archivo Black', sans-serif;
@@ -140,7 +191,7 @@ body {
   position: absolute;
   left: 90px;
   font-size: small;
-  /* position: fixed; */
+  
   font-family: 'Archivo Black', sans-serif;
   transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
@@ -154,7 +205,7 @@ body {
   left: 3%;
   position: absolute;
   width: 18px;
-  /* position: fixed; */
+  
 
 }
 
@@ -171,9 +222,9 @@ body {
   bottom: 3%;
   position: absolute;
   left: 250px;
-  /* width: 20px; */
+  
   font-size: small;
-  /* position: fixed; */
+  
   font-family: 'Archivo Black', sans-serif;
   transition: background-color 0.3s, color 0.3s, border-color 0.3s;
   
@@ -191,7 +242,7 @@ body {
   left: 4%;
   position: absolute;
   width: 18px;
-  /* position: fixed; */
+  
 
 }
 
@@ -206,7 +257,7 @@ body {
 .Para-img {
   font-size: xx-small;
   width: 400px;
-  /* text-overflow: clip; */
+  
   text-align: left;
   position: absolute;
   bottom: 1%;
@@ -264,6 +315,35 @@ body {
   top: 0%;
 
 }
+
+
+/* Default styles for large screens */
+.container {
+  background-color: black;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Styles for smaller screens (e.g., tablets) */
+@media (max-width: 768px) {
+  .container {
+    font-size: 16px;
+  }
+}
+
+/* Styles for even smaller screens (e.g., smartphones) */
+@media (max-width: 576px) {
+  .container {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
 
 
 /*  end of front page  */
@@ -488,7 +568,7 @@ body {
   position: absolute;
   left: 80px;
   bottom: -1480px; 
-  /* width: 17%; */
+  
 }
 
 .yes-img{
@@ -511,7 +591,7 @@ body {
   
   font-size: small;
   width: 250px;
-  /* text-overflow: clip; */
+  
   position: absolute;
   bottom: -1320px;
   left: 360px;
@@ -832,5 +912,15 @@ body {
   /* top: 0%; */
   bottom: -2850 ;
 
+}
+
+/*  end of investing section  */
+
+/*  start respoonsive section  */
+
+@media (max-width:600px){
+  .Cash-img{
+      font-size: 3rem;
+  }
 }
 
